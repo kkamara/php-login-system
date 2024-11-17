@@ -1,5 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\V1\HomeController;
 
-Route::view('/{path?}', 'layouts.app')->where('path', '.*');
+Route::get("/", [HomeController::class, "home"])
+    ->name("home");
