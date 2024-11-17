@@ -8,6 +8,8 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    @include("v1/layouts/nav")
+
     <div class="container">
         @section("content") @show
     </div>
