@@ -28,7 +28,7 @@
                         <li>
                             <a
                               class="dropdown-item" 
-                              href="#"
+                              href="{{ route("settings") }}"
                             >
                               {{ __("Settings") }}
                             </a>

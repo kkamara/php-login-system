@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\V1\Auth\LoginController;
 use App\Http\Controllers\V1\Auth\RegisterController;
+use App\Http\Controllers\V1\User\SettingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\V1\HomeController;
 
@@ -23,4 +24,10 @@ Route::prefix("/user")->group(function () {
     Route::middleware("guest")
         ->post("/register", [RegisterController::class, "registerSubmit"])
         ->name("register.submit");
+    Route::middleware("auth")
+        ->get("/settings", [SettingController::class, "settings"])
+        ->name("settings");
+    Route::middleware("auth")
+        ->post("/settings", [SettingController::class, "settingsSubmit"])
+        ->name("settings.submit");
 });
