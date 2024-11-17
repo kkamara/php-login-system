@@ -9,7 +9,7 @@
     ],
     "version": "1.0.0",
     "type": "project",
-    "description": "(2021) A Laravel 11.x boilerplate with ReactJS 18 Redux SPA.",
+    "description": "(16-Nov-2024) A Laravel 11.x app with static pages. Made from www.github.com/kkamara/php-reactjs-boilerplate .",
     "keywords": [
         "web",
         "web-app",

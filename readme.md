@@ -4,7 +4,7 @@
 
 # PHP Login System [![API](https://github.com/kkamara/php-login-system/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/php-login-system/actions/workflows/build.yml)
 
-(2021) A Laravel 11.x boilerplate with ReactJS 18 Redux SPA.
+(16-Nov-2024) A Laravel 11.x app with static pages. Made from www.github.com/kkamara/php-reactjs-boilerplate .
 
 * [Using Postman?](#postman)
 
