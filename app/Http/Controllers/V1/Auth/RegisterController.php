@@ -28,6 +28,9 @@ class RegisterController extends Controller
             "name" => filter_var($request->input("name"), FILTER_SANITIZE_STRING),
             "email" => filter_var($request->input("email"), FILTER_SANITIZE_EMAIL),
             "password" => filter_var($request->input("password"), FILTER_SANITIZE_STRING),
+            "passwordConfirmed" => $request->input("passwordConfirmed") ?
+                filter_var($request->input("passwordConfirmed"), FILTER_SANITIZE_STRING) :
+                null,
         ];
 
         if ($validator->fails()) {
