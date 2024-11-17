@@ -20,7 +20,7 @@
                         <li>
                             <a
                                 class="dropdown-item" 
-                                href="#"
+                                href="{{ route("profile") }}"
                             >
                               {{ __("Profile") }}
                             </a>

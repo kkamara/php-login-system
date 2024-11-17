@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\V1\Auth\LoginController;
 use App\Http\Controllers\V1\Auth\RegisterController;
+use App\Http\Controllers\V1\User\ProfileController;
 use App\Http\Controllers\V1\User\SettingController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\V1\HomeController;
@@ -30,4 +31,7 @@ Route::prefix("/user")->group(function () {
     Route::middleware("auth")
         ->post("/settings", [SettingController::class, "settingsSubmit"])
         ->name("settings.submit");
+    Route::middleware("auth")
+        ->get("/profile", [ProfileController::class, "profile"])
+        ->name("profile");
 });
