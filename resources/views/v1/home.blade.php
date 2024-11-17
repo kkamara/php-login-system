@@ -9,10 +9,10 @@
                     <p class="col-md-8 fs-4">Exercitation eu Lorem aliqua eiusmod eu ut ut enim.</p>
                     <a
                         class="btn btn-primary btn-lg"
-                        href="/"
+                        href="{{ route("home") }}"
                     >
                         Refresh Page
-                </a>
+                    </a>
                 </div>
             </div>
         </div>
