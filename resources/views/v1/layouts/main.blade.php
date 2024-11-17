@@ -22,6 +22,15 @@
         @section("content") @show
     </div>
 
+    <footer class="mt-4 text-center">
+        <a 
+            href="https://www.github.com/kkamara"
+            className="btn btn-lg btn-default"
+        >
+            www.kelvinkamara.com
+        </a>
+    </footer>
+
     @vite("resources/js/app.js")
 </body>
 </html>
