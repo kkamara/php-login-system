@@ -48,7 +48,7 @@
                 <a
                     class="nav-link active" 
                     aria-current="page" 
-                    href="#"
+                    href="{{ route("login") }}"
                 >
                     Sign In
                 </a>
