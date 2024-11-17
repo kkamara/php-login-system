@@ -13,4 +13,7 @@ Route::prefix("/user")->group(function () {
     Route::middleware("guest")
         ->post("/login", [LoginController::class, "loginSubmit"])
         ->name("login.submit");
+    Route::middleware("auth")
+        ->get("/logout", [LoginController::class, "logout"])
+        ->name("logout");
 });
