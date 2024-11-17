@@ -23,7 +23,7 @@ class LoginController extends Controller
             "rememberMe" => "in:true",
         ]);
         $credentials = [
-            "email" => filter_var($request->input("email"), FILTER_SANITIZE_STRING),
+            "email" => filter_var($request->input("email"), FILTER_SANITIZE_EMAIL),
             "password" => filter_var($request->input("password"), FILTER_SANITIZE_STRING),
             "rememberMe" => $request->input("rememberMe") === "true" ? "true" : null,
         ];
