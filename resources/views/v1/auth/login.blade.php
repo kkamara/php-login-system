@@ -51,6 +51,9 @@
                   <label class="form-check-label" for="loginRememberMe">{{ __("Remember me") }}</label>
                 </div>
                 <div class="text-end">
+                    <a href="#" class="btn btn-primary">
+                        {{ __("Register") }}
+                    </a>
                     <button type="submit" class="btn btn-success">
                         {{ __("Submit") }}
                     </button>
