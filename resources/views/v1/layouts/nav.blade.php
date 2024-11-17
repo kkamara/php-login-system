@@ -57,7 +57,7 @@
                     <a
                         class="nav-link active" 
                         aria-current="page" 
-                        href="#"
+                        href="{{ route("register") }}"
                     >
                         {{ __("Register") }}
                     </a>

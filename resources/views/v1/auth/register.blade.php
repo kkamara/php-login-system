@@ -3,7 +3,7 @@
 @section("content")
     <div class="row mt-4">
         <div class="col-md-6 offset-md-3">
-            <h3>Sign In</h3>
+            <h3>Register</h3>
             @if(count($errors))
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 @foreach($errors->all() as $error)
@@ -12,21 +12,31 @@
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             @endif
-            <form action="{{ route("login.submit") }}" method="POST">
+            <form action="{{ route("register.submit") }}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="loginEmail" class="form-label">{{ __("Email address") }}</label>
+                    <label for="registerName" class="form-label">{{ __("Name") }}</label>
                     <input
                         type="text"
                         class="form-control"
-                        id="loginEmail"
+                        id="registerName"
+                        name="name"
+                        value="{{ old("name") }}"
+                    >
+                </div>
+                <div class="mb-3">
+                    <label for="registerEmail" class="form-label">{{ __("Email address") }}</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="registerEmail"
                         name="email"
                         value="{{ old("email") }}"
                     >
                 </div>
                 <div class="mb-3">
                     <label
-                        for="loginPassword"
+                        for="registerPassword"
                         class="form-label"
                     >
                         {{ __("Password") }}
@@ -34,25 +44,29 @@
                     <input
                         type="password"
                         class="form-control"
-                        id="loginPassword"
+                        id="registerPassword"
                         name="password"
                         value="{{ old("password") }}"
                     />
                 </div>
-                <div class="mb-3 text-end">
-                  <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="loginRememberMe"
-                        name="rememberMe"
-                        value="true"
-                        @if(old("rememberMe") === "true") checked @endif
+                <div class="mb-3">
+                    <label
+                        for="registerPasswordConfirmed"
+                        class="form-label"
+                    >
+                        {{ __("Password confirmed") }}
+                    </label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="registerPasswordConfirmed"
+                        name="passwordConfirmed"
+                        value="{{ old("passwordConfirmed") }}"
                     />
-                  <label class="form-check-label" for="loginRememberMe">{{ __("Remember me") }}</label>
                 </div>
                 <div class="text-end">
-                    <a href="{{ route("register") }}" class="btn btn-primary">
-                        {{ __("Register") }}
+                    <a href="{{ route("login") }}" class="btn btn-primary">
+                        {{ __("Login") }}
                     </a>
                     <button type="submit" class="btn btn-success">
                         {{ __("Submit") }}
