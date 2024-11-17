@@ -3,6 +3,7 @@
 @section("content")
     <div class="row mt-4">
         <div class="col-md-6 offset-md-3">
+            <h3>Sign In</h3>
             @if(count($errors))
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 @foreach($errors->all() as $error)
