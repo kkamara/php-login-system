@@ -53,8 +53,8 @@ npm run build
 ## Usage
 
 ```bash
-herd link boilerplate
-# Website accessible at http://boilerplate.test
+herd link login-system
+# Website accessible at http://login-system.test
 ```
 
 ## API Documentation
