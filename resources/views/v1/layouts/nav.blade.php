@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary login-system-navbar">
+<nav class="navbar navbar-expand-lg bg-primary login-system-navbar" data-bs-theme="dark">
     <div class="container">
         <a class="navbar-brand" href="{{ route("home") }}">{{ config("app.name") }}</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
