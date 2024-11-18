@@ -13,7 +13,7 @@
             <ul class="navbar-nav right-navbar">
                 @if(auth()->user())
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         {{ __("User") }}
                     </a>
                     <ul class="dropdown-menu">
